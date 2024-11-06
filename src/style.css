@@ -62,5 +62,42 @@ just for appearance; change whatever you want
 
 /* custom styles */
 body {
-  margin: 0;
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.slides {
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.indicators,
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.indicator,
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 80px;
+  background-color: aliceblue;
+  padding: 0.25em;
+  cursor: pointer;
+  user-select: none;
+}
+.indicator:hover,
+.control:hover {
+  background-color: cadetblue;
+  color: white;
+  transition: 0.5s;
+}
+
+.indicator.active {
+  background-color: salmon;
 }
